@@ -27,7 +27,6 @@ const Typewriter: React.FC<ITypewriterProps> = (
 		prefixedText,
 	}
 ): ReactElement => {
-
 	const [state, setState]: [IState, Dispatch<SetStateAction<IState>>] = useState<IState>({
 		text: '',
 		message: '',
