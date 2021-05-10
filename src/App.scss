@@ -1,0 +1,83 @@
+section {
+	// Necessary to utilize z-index
+	position: relative;
+
+	// Lift above aurora + stars
+	z-index: 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0 20px;
+}
+
+#aurora {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(-45deg, #003a65, #009085, #ffffff, #960088, #000000);
+	animation: aurora 20s ease infinite;
+	background-size: 160% 160%;
+	opacity: 0.25;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#stars {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 0;
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-image: url("/assets/images/stars.png");
+		animation: stars 120s linear infinite;
+	}
+
+	&:before {
+		background-position: center, top right, bottom left, 50% 50%;
+	}
+
+	&:after {
+		background-position: center, top right, bottom left;
+		left: 100%;
+	}
+}
+
+@keyframes aurora {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes stars {
+	from {
+		-webkit-transform: translateX(0px);
+	}
+
+	to {
+		-webkit-transform: translateX(-100%);
+	}
+}

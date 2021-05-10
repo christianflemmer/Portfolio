@@ -1,0 +1,43 @@
+// ******************************************************************
+// *** Screen sizes
+// ******************************************************************
+@mixin isTablet {
+	@media only screen and (max-width: 1150px) {
+		@content;
+	}
+}
+
+@mixin isMobile {
+	@media only screen and (max-width: 650px) {
+		@content;
+	}
+}
+
+// ******************************************************************
+// *** Keyframe definitions
+// ******************************************************************
+@keyframes hue {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	20% {
+		filter: hue-rotate(75deg);
+	}
+
+	40% {
+		filter: hue-rotate(150deg);
+	}
+
+	60% {
+		filter: hue-rotate(225deg);
+	}
+
+	80% {
+		filter: hue-rotate(300deg);
+	}
+
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}

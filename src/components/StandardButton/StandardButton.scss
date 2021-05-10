@@ -1,0 +1,29 @@
+a {
+	display: flex;
+	align-self: center;
+	justify-content: space-between;
+	width: 300px;
+	padding: 12px 50px;
+	margin-top: 15px;
+	border: 2px solid var(--color-palette-6);
+	transition: background-color var(--standard-transition-time), border var(--standard-transition-time);
+
+	.chevron {
+		width: 10%;
+		stroke: var(--color-palette-6);
+		stroke-width: 2px;
+		transition: transform var(--standard-transition-time);
+	}
+
+	&:hover {
+		background-color: var(--root-color-2);
+		border: 2px solid var(--root-color-2);
+		transition: background-color var(--standard-transition-time), border var(--standard-transition-time),
+			transform var(--standard-transition-time);
+
+		.chevron {
+			transition: transform var(--standard-transition-time);
+			transform: rotate(90deg);
+		}
+	}
+}

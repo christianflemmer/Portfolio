@@ -1,0 +1,83 @@
+@import "./fonts.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
+
+* {
+	box-sizing: border-box;
+
+	::selection {
+		background-color: var(--root-color-1);
+		color: var(--color-palette-6);
+	}
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: var(--color-palette-6);
+	background-color: var(--color-palette-2);
+	font-size: 62.5%;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 0.3px;
+	line-height: 1.5;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+
+	@include isTablet() {
+		font-size: 46.875%;
+	}
+}
+
+body::before {
+	content: "";
+	background-image: url("/assets/images/noise.png");
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.6;
+	pointer-events: none;
+	z-index: var(--z-noise);
+}
+
+h1 {
+	margin: 0;
+	font-size: var(--fz-big-boi);
+	text-shadow: var(--shadow-1);
+}
+
+h2 {
+	margin: 0;
+	font-size: var(--fz-medium-boi);
+	text-shadow: var(--shadow-1);
+}
+
+p {
+	font-size: var(--fz-small-boi);
+	color: var(--color-palette-4);
+	text-shadow: var(--shadow-1);
+}
+
+small {
+	font-size: var(--fz-tiny-boi);
+	opacity: 0.3;
+}
+
+a {
+	color: var(--color-palette-6);
+	font-size: var(--fz-small-boi);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	outline: none;
+	font-size: var(--fz-small-boi);
+}
+
+.red-highlight {
+	color: var(--root-color-1);
+}

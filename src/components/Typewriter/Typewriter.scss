@@ -1,0 +1,11 @@
+#blinker {
+	padding-left: 5px;
+	border-right: 2px solid var(--color-palette-4);
+	animation: blinker 0.75s linear infinite;
+
+	@keyframes blinker {
+		50% {
+			opacity: 0.3;
+		}
+	}
+}
