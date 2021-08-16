@@ -1,10 +1,8 @@
 section {
-	// Necessary to utilize z-index
 	position: relative;
-
-	// Lift above aurora + stars
 	z-index: 1;
-
+	margin: 0 auto;
+	flex-direction: column;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -20,7 +18,7 @@ section {
 	bottom: 0;
 	left: 0;
 	background: linear-gradient(-45deg, #003a65, #009085, #ffffff, #960088, #000000);
-	animation: aurora 20s ease infinite;
+	animation: aurora 20s var(--standard-transition-type) infinite;
 	background-size: 160% 160%;
 	opacity: 0.25;
 	overflow: hidden;
