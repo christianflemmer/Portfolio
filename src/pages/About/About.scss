@@ -1,0 +1,34 @@
+#about {
+	max-width: 1000px;
+
+	#content {
+		display: flex;
+		gap: 50px;
+
+		#flemmer-himself {
+			height: 200px;
+		}
+
+		span {
+			color: var(--root-color-1);
+		}
+
+		.svgs a {
+			all: initial;
+			cursor: pointer;
+
+			&:not(:last-of-type) {
+				margin-right: 10px;
+			}
+
+			img {
+				height: 40px;
+				transition: transform var(--standard-transition-time) var(--standard-transition-type);
+
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+	}
+}
