@@ -2,6 +2,7 @@ import './App.scss';
 import './assets/scss/main.scss';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Projects from './pages/Projects/Projects';
 import Welcome from './pages/Welcome/Welcome';
 
 export default function App(
@@ -13,6 +14,7 @@ export default function App(
 			<div id="aurora"></div>
 			<Welcome />
 			<About />
+			<Projects />
 			<Contact />
 		</>
 	);

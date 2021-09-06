@@ -41,7 +41,7 @@ export default function About(
 				/>
 				<article>
 					<p>I'm a curious web developer who is passionate about new technologies, best practices and how to make things look pretty.</p>
-					<p>I'm currently employed @ OxyGuard International A/S as a <span>full-stack web developer</span> working with technologies including, but not limited to:</p>
+					<p>I'm currently employed @ OxyGuard International A/S as a <span>full-stack web developer</span> and have over <span>three years</span> of professional experience working with technologies including, but not limited to:</p>
 					<div className="svgs">
 						{svgs.map((svg: ISVG): JSX.Element =>
 							<a key={svg.externalUrl} target="_blank" rel="noreferrer" href={svg.externalUrl}>
