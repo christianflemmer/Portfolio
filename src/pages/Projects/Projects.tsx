@@ -8,6 +8,7 @@ export default function Projects(
 ): ReactElement {
 	return (
 		<section id="projects">
+			<h1>PROJECTS</h1>
 			<Card />
 		</section>
 	);

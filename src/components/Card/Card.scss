@@ -8,6 +8,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
     transition: background-color var(--standard-transition-time) var(--standard-transition-type);
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 
     &:hover {
         --border-style: 3px solid var(--color-palette-3);

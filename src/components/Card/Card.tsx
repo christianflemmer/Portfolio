@@ -24,7 +24,7 @@ const Card: React.FC<ICardProps> = (
                 style={{ height: 350, width: 300 }}
             >
                 <div className="content">
-                    <h2>ng-sidebar</h2>
+                    <h2>&lt;/ng-sidebar&gt;</h2>
                     <p>// carefully tailored sidebar with nested route styling.</p>
                     <div className="svgs">
                         <img src={angularSVG} />
